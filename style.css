@@ -69,11 +69,11 @@ nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.produit img {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 8px;
+.produit img{
+width:100%;
+height:160px;
+object-fit:contain;
+background:white;
 }
 
 #chatbot{
@@ -81,18 +81,22 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:white;
-padding:10px;
 width:250px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+padding:10px;
 border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
 #chatbox{
 height:150px;
 overflow-y:auto;
-margin-bottom:5px;
 font-size:14px;
+margin-bottom:5px;
 }
+    
+    
+
 
     
+
 
