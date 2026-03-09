@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 onclick="retourAccueil()">MarketPlace</h1>
+        <div class="barre-haut">
+            <input type="text" id="recherche" placeholder="Rechercher un produit...">
+            <button onclick="chercherProduit()">🔍</button>
+            <button id="panierBtn">Panier (0)</button>
+        </div>
+        <nav>
+            <select id="categories" onchange="filtrerCategorie()">
+                <option value="all">Toutes les catégories</option>
+                <option value="jouets">Jouets</option>
+                <option value="electronique">Appareils électroniques</option>
+                <option value="electromenager">Appareils électroménagers</option>
+                <option value="nourriture">Nourriture</option>
+                <option value="vetements">Vêtements</option>
+                <option value="deco">Décoration maison</option>
+                <option value="jeuxvideo">Jeux vidéo / Consoles</option>
+                <option value="sport">Sport / Matériel</option>
+                <option value="musique">Instruments de musique</option>
+                <option value="livres">Livres / BD / Manga</option>
+                <option value="bijoux">Bijoux / Montres</option>
+            </select>
+        </nav>
+    </header>
+
+    <section id="pubs" class="pubs"></section>
+
+    <main>
+        <div id="produits" class="produits"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 MarketPlace | Projet scolaire</p>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
