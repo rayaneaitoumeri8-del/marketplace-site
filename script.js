@@ -104,3 +104,33 @@ box.innerHTML+=`<p><b>Bot :</b> ${reponse}</p>`;
 input.value="";
 }
 
+function envoyerMessage(){
+
+const input=document.getElementById("chatinput");
+const chat=document.getElementById("chatbox");
+
+let question=input.value.toLowerCase();
+
+let reponse="Je ne comprends pas.";
+
+if(question.includes("bonjour")){
+reponse="Bonjour ! Comment puis-je vous aider ?";
+}
+
+if(question.includes("livraison")){
+reponse="La livraison prend environ 3 à 5 jours.";
+}
+
+if(question.includes("prix")){
+reponse="Les prix sont indiqués sous chaque produit.";
+}
+
+chat.innerHTML+=`<p><b>Vous :</b> ${input.value}</p>`;
+chat.innerHTML+=`<p><b>Bot :</b> ${reponse}</p>`;
+
+input.value="";
+}
+
+
+
+
