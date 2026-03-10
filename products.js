@@ -1,5 +1,5 @@
 const produits = [
-  {nom:"Téléphone Samsung Galaxy",categorie:"electronique",prix:500,image:"https://m.media-amazon.com/images/I/71PvHfU+pwL._AC_SL1500_.jpg"},
+  {nom:"Téléphone Samsung Galaxy",categorie:"electronique",prix:500,image:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
   {nom:"iPhone 15",categorie:"electronique",prix:1200,image:"https://m.media-amazon.com/images/I/71yzJoE7WlL._AC_SL1500_.jpg"},
   {nom:"MacBook Air",categorie:"electronique",prix:1300,image:"https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SL1500_.jpg"},
   {nom:"Nintendo Switch",categorie:"jeuxvideo",prix:300,image:"https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg"},
@@ -20,6 +20,8 @@ const produits = [
   {nom:"Boîte de cookies",categorie:"nourriture",prix:6,image:"https://m.media-amazon.com/images/I/81s7gqP7emL._AC_SL1500_.jpg"},
   {nom:"Lampe de chevet design",categorie:"deco",prix:45,image:"https://m.media-amazon.com/images/I/61VWAs3Y1LL._AC_SL1500_.jpg"}
 ];
+
+
 
 
 
