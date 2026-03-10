@@ -134,3 +134,38 @@ messages.innerHTML+=`<p><b>Bot :</b> ${reponse}</p>`;
 input.value="";
 }
 
+function envoyerMessage(){
+
+const input=document.getElementById("chatinput");
+const box=document.getElementById("chatmessages");
+
+const message=input.value;
+
+if(message===""){
+return;
+}
+
+box.innerHTML += "<p><b>Vous :</b> " + message + "</p>";
+
+let reponse="Je suis le chatbot du site. Essayez de dire : bonjour, prix ou livraison.";
+
+const msg=message.toLowerCase();
+
+if(msg.includes("bonjour") || msg.includes("salut")){
+reponse="Bonjour ! Bienvenue sur MarketPlace.";
+}
+
+else if(msg.includes("prix")){
+reponse="Les prix sont affichés sous chaque produit.";
+}
+
+else if(msg.includes("livraison")){
+reponse="La livraison prend environ 3 à 5 jours.";
+}
+
+box.innerHTML += "<p><b>Bot :</b> " + reponse + "</p>";
+
+input.value="";
+}
+
+
